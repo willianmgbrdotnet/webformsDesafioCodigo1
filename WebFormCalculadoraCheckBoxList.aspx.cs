@@ -49,6 +49,7 @@ namespace webformsDesafioCodigo1
         protected void btnClbConfirmarDias_Click(object sender, EventArgs e)
         {
             lstbDiasConfirmados.Items.Clear();
+            lblDiasConfirmados.Text = string.Empty;
             for (int i = 0; i < clbDiasDaSemana.Items.Count; i++)
             {
                 if (clbDiasDaSemana.Items[i].Selected)

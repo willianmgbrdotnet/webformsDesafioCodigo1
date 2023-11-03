@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="image\RealMadrid.jpg" />
+    <Content Include="image\realMadrid.png" />
     <Content Include="Web.config" />
     <Content Include="WebFormCalculadoraCheckBoxList.aspx" />
   </ItemGroup>
