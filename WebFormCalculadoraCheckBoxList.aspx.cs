@@ -45,5 +45,19 @@ namespace webformsDesafioCodigo1
                 lblResultado.Text = "Use apenas Números nesta Calculadora! Use o ' . ' ponto para separar as casas decimais.";
             }
         }
+
+        protected void btnClbConfirmarDias_Click(object sender, EventArgs e)
+        {
+            lstbDiasConfirmados.Items.Clear();
+            for (int i = 0; i < clbDiasDaSemana.Items.Count; i++)
+            {
+                if (clbDiasDaSemana.Items[i].Selected)
+                {
+                    lstbDiasConfirmados.Items.Add(clbDiasDaSemana.Items[i].Text);
+
+                    lblDiasConfirmados.Text += clbDiasDaSemana.Items[i].Text + "<br />";
+                }
+            }
+        }
     }
 }
