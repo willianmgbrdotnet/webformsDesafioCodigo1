@@ -7,3 +7,7 @@ b) Adicionar 2 textbox com a sua identificação, onde serão adicionados os número
 cada um.
 c) Adicionar um DropDownList para a escolha das operações a serem executadas.
 d) Adicionar uma label para mostrar o resultado.
+
+## Calculadora Completa! Usei o 'TryParse' para o Tratamento de Erros e Exceções.
+<br />
+

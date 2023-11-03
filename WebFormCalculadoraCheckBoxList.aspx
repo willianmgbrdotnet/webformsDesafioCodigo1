@@ -25,7 +25,7 @@
                             <asp:ListItem Value="4">Divisão /</asp:ListItem>
                         </asp:DropDownList>
 &nbsp;
-                        <asp:Button ID="btnCalcular" runat="server" Text="Calcular" />
+                        <asp:Button ID="btnCalcular" runat="server" Text="Calcular" BackColor="#CCFFFF" Font-Bold="True" OnClick="btnCalcular_Click" />
 &nbsp;
                         <asp:Label ID="lblResultado" runat="server"></asp:Label>
                     </td>

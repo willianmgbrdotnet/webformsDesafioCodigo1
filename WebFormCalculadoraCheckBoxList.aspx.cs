@@ -13,5 +13,37 @@ namespace webformsDesafioCodigo1
         {
 
         }
+
+        protected void btnCalcular_Click(object sender, EventArgs e)
+        {
+            
+            if (double.TryParse(txtPrimeiroNumero.Text, out double x) && double.TryParse(txtSegundoNumero.Text, out double y))
+            {
+                if(ddlEscolherOperacao.SelectedIndex == 1)
+                {
+                    lblResultado.Text = "A Soma é: " + (x + y).ToString();
+                }
+                else if(ddlEscolherOperacao.SelectedIndex == 2)
+                {
+                    lblResultado.Text = "A Diferença é: " + (x - y).ToString();
+                }
+                else if(ddlEscolherOperacao.SelectedIndex == 3)
+                {
+                    lblResultado.Text = "O Produto é: " + (x * y).ToString();
+                }
+                else if(ddlEscolherOperacao.SelectedIndex == 4)
+                {
+                    lblResultado.Text = "O Quociente é: " + (x / y).ToString();
+                }
+                else
+                {
+                    lblResultado.Text = "Escolha uma Operação Matemática! Use o ' . ' ponto para separar as casas decimais.";
+                }
+            }
+            else
+            {
+                lblResultado.Text = "Use apenas Números nesta Calculadora! Use o ' . ' ponto para separar as casas decimais.";
+            }
+        }
     }
 }
